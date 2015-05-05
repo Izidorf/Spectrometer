@@ -1,0 +1,27 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Minimal Django File Upload Example</title>   
+    </head>
+    <body>
+ -->
+{# Load the tag library #}
+{% load bootstrap3 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+
+<form action="{% url views.processUnknown %}" method="post" >
+    {% csrf_token %}
+    {{ form1 }}
+    <input type="submit" value="Submit" />
+</form>
+
+<!--     </body>
+</html>  -->
